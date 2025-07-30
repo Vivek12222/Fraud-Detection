@@ -19,13 +19,13 @@ This project follows the typical Data Science pipeline:
 <b>1. Data Collection</b>
 Data is sourced from Accredian Fraud Dataset and loaded into a pandas DataFrame.
 
-<b>2. Data Preprocessing<b>
+<b>2. Data Preprocessing</b>
 Missing values check: No missing values found.
 Data types: All features are numeric.
 Scaling: Amount and Time features were scaled using StandardScaler.
 Class imbalance: Addressed through anomaly detection and evaluation strategies rather than oversampling/undersampling.
 
-<b>3. Exploratory Data Analysis (EDA)<b>
+<b>3. Exploratory Data Analysis (EDA)</b>
 Visualized class imbalance using bar plots.
 Distribution plots and correlation heatmaps used to understand relationships.
 Observed that fraud transactions often have smaller amounts and different feature patterns.
@@ -44,7 +44,7 @@ Contamination rate set close to 0.0017 (the fraud rate).
 
 Predictions compared with actual labels.
 
-🔹 B. XGBoost (Supervised)
+<i>🔹 B. XGBoost (Supervised)<i>
 Trained using labeled data.
 Handled class imbalance using the scale_pos_weight parameter.
 Performed train-test split (80:20).
