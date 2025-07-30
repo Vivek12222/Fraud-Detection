@@ -54,9 +54,9 @@ Focused on Recall (sensitivity) to minimize missed frauds.
 Plotted confusion matrices and ROC curves.
 
 Metric	Isolation Forest	XGBoost
-Precision	~0.30	~0.91
-Recall	~0.65	~0.87
-ROC-AUC	~0.89	~0.99
+1. Precision	~0.30	~0.91</n>
+2. Recall	~0.65	~0.87</n>
+3. ROC-AUC	~0.89	~0.99
 
 ## 🔍 Key Insights
 Isolation Forest is useful for anomaly detection without labels but less precise.
