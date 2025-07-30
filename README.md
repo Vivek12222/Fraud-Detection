@@ -34,24 +34,20 @@ Observed that fraud transactions often have smaller amounts and different featur
 Two different approaches were used:
 
 <i>🔹 A. Isolation Forest (Unsupervised)</i>
-Isolation Forest works by isolating anomalies in the dataset.
+  Isolation Forest works by isolating anomalies in the dataset.
+  Since fraudulent data is rare, it’s treated as an outlier.
+  Model trained on all data without labels.
+  Contamination rate set close to 0.0017 (the fraud rate).
+  Predictions compared with actual labels.
 
-Since fraudulent data is rare, it’s treated as an outlier.
-
-Model trained on all data without labels.
-
-Contamination rate set close to 0.0017 (the fraud rate).
-
-Predictions compared with actual labels.
-
-<i>🔹 B. XGBoost (Supervised)<i>
+<i>🔹 B. XGBoost (Supervised)</i>
 Trained using labeled data.
 Handled class imbalance using the scale_pos_weight parameter.
 Performed train-test split (80:20).
 Tuned hyperparameters using GridSearchCV for optimal performance.
 Feature importance plotted to understand key drivers of fraud detection.
 
-<b>5. Model Evaluation<b>
+<b>5. Model Evaluation</b>
 Used Precision, Recall, F1-Score, and ROC-AUC to evaluate models.
 Due to class imbalance, Accuracy is misleading.
 Focused on Recall (sensitivity) to minimize missed frauds.
@@ -83,10 +79,10 @@ Imbalanced-learn – handled class imbalance
 ## 🚀 How to Run
 Clone this repo:
 
-<p>
+<pre>
 git clone https://github.com/yourusername/fraud-detection-model.git
 cd fraud-detection-model
-</p>
+</pre>
 
 Run the notebook:
 Open fraud_detection.ipynb in Jupyter Notebook or run scripts from terminal.
